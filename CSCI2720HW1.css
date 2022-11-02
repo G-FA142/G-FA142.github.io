@@ -1,0 +1,235 @@
+/**
+ * CSCI2720/ESTR2106 Assignment 1
+ * Bootstrap Web Page with a Web Form
+ *
+ * I declare that the assignment here submitted is original
+ * except for source material explicitly acknowledged,
+ * and that the same or closely related material has not been
+ * previously submitted for another course.
+ * I also acknowledge that I am aware of University policy and
+ * regulations on honesty in academic work, and of the disciplinary
+ * guidelines and procedures applicable to breaches of such
+ * policy and regulations, as contained in the website.
+ *
+ * University Guideline on Academic Honesty:
+ *   http://www.cuhk.edu.hk/policy/academichonesty
+ * Faculty of Engineering Guidelines to Academic Honesty:
+ *   https://www.erg.cuhk.edu.hk/erg/AcademicHonesty
+ *
+ * Student Name: GU, Zhehao 
+ * Student ID  : 1155141578 
+ * Date        : 2022/10/18 
+ */
+body{min-width:500px}
+
+#header{
+    background-image: url(3.jpg);
+    background-size:cover;
+    min-width: 400px;
+
+}
+#headerbox{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:large;
+    color:azure;
+
+    border: 2em;
+    text-align:left;
+}
+#headerbox a{
+    text-decoration:none; 
+    color:khaki;
+}
+
+.basic-info{
+    width:70%;
+}
+.basic-info tr:hover{
+    background-color:darkslateblue;
+}
+.basic-info td{
+    /*border-bottom:1px solid rgb(120, 120, 120);*/
+    border-top:1px solid rgb(120, 120, 120);
+    padding:10px;
+}
+
+
+.imgbox {
+    width:100%;
+    margin:auto;
+    display:block;
+    background-color:white;
+    text-align:center;
+}
+.imgbox:active{
+    display:block;
+}
+.imgbox img{
+    max-width:100%;
+    transition:all ease-in-out;
+}
+
+.imgbutton {
+    background-color: rgba(212, 212, 212, 0.745);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+.imgbutton:hover {
+    background-color: rgba(148, 147, 147, 0.645);
+}
+
+#mainnav{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    background-color:azure;
+    width:100%;
+
+}
+#mainnav ul{
+    margin-left:15%;
+    margin-right:15%;
+    font-family: 'Acme', sans-serif;
+    text-align:center;
+    padding:0;
+    width:100%;
+    font-size:x-large;
+
+    
+}
+#mainnav li{
+    margin:auto;
+    text-align:center;
+    display:inline-block;
+    height:100%;
+}
+#mainnav a{
+    text-decoration:none;
+}
+
+#special{
+    text-align:center;
+    margin-top:15px;
+    background-color:rgb(141, 198, 180);
+    display:none;
+}
+#special button{
+    font-family: 'Indie Flower', cursive;
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left:5%;
+    margin-right:5%;
+    width:fit-content;
+    font-size:x-large;
+    background-color: inherit;
+    border:1px solid black;
+}
+
+#progress{
+    height:100%;
+    background-color: dodgerblue;
+    border-radius:10px;
+    display:block;
+    float:left;
+    margin:0;
+}
+#progressbox{
+    height:25px;
+    background-color:aliceblue;
+    border-radius:10px;
+    text-align: left;
+    padding:0;
+}
+
+#aboutme{
+    background-color: rgb(218, 238, 188);
+    font-size:large;
+    font-family: 'Acme', sans-serif;
+}
+#aboutme p{
+    text-align:left;
+    
+}
+
+.hobbyitem{
+    border:5px solid green;
+    background-color: green;
+    color:aliceblue;
+    border-radius:5px;
+    width:fit-content;
+    text-align:center;
+    height:40px;
+    display:inline-block;
+    margin:5px;
+    font-family: 'Acme', sans-serif;
+}
+.hobbyitem:hover{
+    background-color: rgb(0, 100, 0);
+    border:5px solid rgb(0, 100, 0);
+}
+
+#course{
+    background-color:rgb(110, 219, 255);
+    font-family: 'Acme', sans-serif;
+}
+#coursestable{
+    font-size:large;
+    margin-top:15px;
+    font-family: 'Acme', sans-serif;
+    width:100%;
+    text-align:center;
+}
+#coursestable td{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+#links{
+    background-color:lightpink;
+    font-family: 'Acme', sans-serif;
+    text-align:left;
+    font-size:large;
+}
+#links a{
+    text-decoration:none;
+}
+
+#website{
+    background-color: rgb(228, 196, 114);
+    font-family: 'Acme', sans-serif;
+    text-align:left;
+    font-size:large;
+    text-decoration:none;
+}
+textarea.form-control.is-invalid{
+    border-color:red;
+    background-color: lightgray;
+}
+
+#comments{
+    background-color: lightcyan;
+}
+
+.flex-grow-1 h6{
+    font-family: 'Acme', sans-serif;
+    margin-top:5px;
+}
+
+.d-flex:hover{
+    background-color: rgb(225, 230, 238);
+}
+
+footer{
+    font-size:large;
+    color:gainsboro;
+    font-family: 'Josefin Sans', sans-serif;
+    height:150px;
+    background-image: url(5.jpg);
+    background-size:cover;
+    padding:20px;
+}

@@ -1,0 +1,299 @@
+<!--
+/**
+ * CSCI2720/ESTR2106 Assignment 1
+ * Bootstrap Web Page with a Web Form
+ *
+ * I declare that the assignment here submitted is original
+ * except for source material explicitly acknowledged,
+ * and that the same or closely related material has not been
+ * previously submitted for another course.
+ * I also acknowledge that I am aware of University policy and
+ * regulations on honesty in academic work, and of the disciplinary
+ * guidelines and procedures applicable to breaches of such
+ * policy and regulations, as contained in the website.
+ *
+ * University Guideline on Academic Honesty:
+ *   http://www.cuhk.edu.hk/policy/academichonesty
+ * Faculty of Engineering Guidelines to Academic Honesty:
+ *   https://www.erg.cuhk.edu.hk/erg/AcademicHonesty
+ *
+ * Student Name: GU, Zhehao 
+ * Student ID  : 1155141578 
+ * Date        : 2022/10/18 
+ */
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- GU, Zhehao 1155141578@link.cuhk.edu.hk -->
+    <meta charset="utf-8">
+    <title>Zhehao GU @ CUHK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSCI2720HW1.css">
+    
+</head>
+
+<body>
+    <header class="container-fluid" id="header">
+        <div class="container-lg" id="headerbox">
+            <nav class="navbar navbar-expand-md navbar-info navbar-collapse" id="topnav">
+                <ul class="nav" id="topnav-ul">
+                    <li class="nav-item">
+                        <i class="bi bi-box-fill"></i>&nbsp;<a href="index.html">Home</a> | </li>
+                    <li class="nav-item">
+                        <a href="#about">&nbsp;About</a> |</li>
+                    <li class="nav-item">
+                        &nbsp;<a href="https://www.cuhk.edu.hk/english/index.html" target="_blank">CUHK</a> | </li>
+                    <li class="nav-item">
+                        &nbsp;<a href="https://www.math.cuhk.edu.hk/" target="_blank">Department of Mathematics</a> | </li>
+                    <li class="nav-item">
+                        &nbsp;<a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="container-lg" id="about">
+                <section>
+                    <h2>About</h2>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7 col-lg-9 col-md-9 col-sm-8 ">
+                                <h4>Mr. GU, Zhehao</h4>
+                                <h4><strong>Student</strong></h5>
+                                <ul>
+                                    <li><h5>Bsc(The Chinese University of Hong Kong), Department of Mathematics; (It's true!)</h5></li>
+                                    <li><h5>Bsc( <i class="bi bi-camera-video"></i> Zoom University), Department of Eating and Sleeping; (Just a joke <i class="bi bi-emoji-wink"></i>)</h5></li>
+                                    <li><h5>Msc(Home University), Department of Cooking</h5></li>
+                                </ul>
+                                <hr>
+                                <table class="basic-info" id="contact">
+                                    <tr>
+                                        <td>Phone</td>
+                                        <td>(+852) 5426 1175</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td>LWS College, CUHK, Sha Tin, Hong Kong</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td><a href = "mailto: 1155141578@link.cuhk.edu.hk">1155141578@link.cuhk.edu.hk</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-5 col-lg-3 col-md-3 col-sm-4">
+                                <div class="container" style="text-align:center">
+                                    <img src="self.jpg" alt="Sunset on the mountain" width="90%" >
+                                </div>
+
+                            </div>
+
+                        </div>
+                </div>
+                </section>
+
+             </div>
+        </div>
+    </header>
+    <br>
+    <div class="container-xl">
+        <div class="imgbox">
+            <img src="img1.jpg" id="imgs"><br>
+            <button class="imgbutton" id="defaultOpen" value="1" onmouseenter="changeimg(value)">1</button>
+            <button class="imgbutton" value="2" onmouseenter="changeimg(value)">2</button>
+            <button class="imgbutton" value="3" onmouseenter="changeimg(value)">3</button>
+            <button class="imgbutton" value="4" onmouseenter="changeimg(value)">4</button>
+            <button class="imgbutton" value="5" onmouseenter="changeimg(value)">5</button>
+        </div>
+    </div>
+    <br><br><br>
+    <nav class="navbar navbar-expand-md navbar-info" id="mainnav">
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="#aboutme">About me</a></li>
+                <li class="nav-item"><a href="#course">Courses</a></li>
+                <li class="nav-item"><a href="#website">Interesting Websites</a></li>
+                <li class="nav-item"><a href="#links">links</a></li>
+                <li class="nav-item"><a href="#mainnav" style="color:crimson;background-color:inherit;"
+                    onclick=special() id="specialbutton">Special!</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-xl" id="special">
+        <button id="sp1" onclick="sp1()">Task1: Align</button>
+        <button id="sp2" onclick="sp2()">Task2: New Hobby</button>
+        <button id="sp3" onclick="sp3()">Task3: Scroll</button>
+    </div>
+
+    <div class="container-fluid sticky-top sticky-bottom" style="display:none;" id="progressbox">
+        <div class="progress-bar progress-bar-striped bg-warning" id="progress" style="width:1%;"></div>
+    </div>
+    <br>
+    <main>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-sm-6 col-5" id="aboutme">
+                    <section>
+                        <h2 class="sectiontitle text-start" style="margin-top:10px;margin-bottom:10px;">About me</h2>
+                        <img src="img6.jpg" align="right" width="25%">
+                        <p style="text-align:left;">I'm an undergraduate student learning in the Chinese University of Hong Kong,
+                            and major in mathematics. In fact, it's my first time to do such a long homework, also the first time to 
+                            design a website, I don't even know what to write here, so let me stop here :)
+                        </p>
+                        <p>Oh, I almost forget to design the hobby part! Let me make some tags here:</p>
+                        <div class="container" id="hobbies">
+                            <div class="hobbyitem"><p>Sleeping</p></div>
+                            <div class="hobbyitem"><p>Biking</p></div>
+                            <div class="hobbyitem"><p>Hiking</p></div>
+                            <div class="hobbyitem"><p>PC Games</p></div>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-7" id="course">
+                    <section>
+                        <h2 class="sectiontitle text-start" style="margin-top:10px;margin-bottom:10px;">Courses</h2>
+                        <table id="coursestable">
+                            <tr>
+                                <td width="35%">Course Code</td>
+                                <td width="65%">Title</td>
+                            </tr>
+                            <tr>
+                                <td>CSCI2510</td>
+                                <td>Computer organization</td>
+                            </tr>
+                            <tr>
+                                <td>CSCI2720</td>
+                                <td>Building Web Applications</td>
+                            </tr>
+                            <tr>
+                                <td>MATH3060</td>
+                                <td>Mathematical Analysis III</td>
+                            </tr>
+                            <tr>
+                                <td>MATH4280</td>
+                                <td>Innovation and Design in Big Data Analytics</td>
+                            </tr>
+                            <tr>
+                                <td>MATH4400</td>
+                                <td>Project</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-sm-6 col-5" id="website">
+                    <section>
+                        <h2 class="sectiontitle text-start" style="margin-top:10px;margin-bottom:10px;">Interesting Websites</h2>
+                        <ul>
+                            <li><a href="https://www.howmanypeopleareinspacerightnow.com/" style="text-decoration:none;" ><strong>
+                            Howmanypeopleareinspacerightnow</strong></a> is just like its name, a website to tell you how many people are in space now.</li>
+                            <li><a href="https://www.airpano.com/" style="text-decoration:none;"><strong>Airpano</strong></a> is a VR project created by a team of 
+                                Russian photographers focused on taking high-resolution aerial 360° photographs and 360° video.</li>
+                        </ul>
+                    </section>
+
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-7" id="links">
+                    <section>
+                        <h2 class="sectiontitle text-start" style="margin-top:10px;margin-bottom:10px;">Useful links</h2>
+                        <ul>
+                            <li><a href="https://www.lib.cuhk.edu.hk/en/">CUHK Lib</a> -https://www.lib.cuhk.edu.hk/en/<br></li>
+                            <li><a href="http://cusis.cuhk.edu.hk/">CUSIS</a> -http://cusis.cuhk.edu.hk/<br></li>
+                            <li><a href="https://blackboard.cuhk.edu.hk/">Blackboard</a> -https://blackboard.cuhk.edu.hk/<br></li>
+
+                        </ul>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-lg" style="background-color:rgba(230, 230, 216, 0.312)">
+            <section>
+                <br>
+                <h2 class="sectiontitle text-start" style="margin-top:10px;"><strong>Comment System</strong></h2>
+                <hr>
+                <div class="container-fluid">
+                    <div id="comments" style="margin-top:10px;padding-top:5px;"> 
+                      <div id="c1" class="d-flex"> 
+                        <div class="flex-shrink-0"> 
+                          <svg height="100" width="120">
+                            <circle cx="50" cy="50" r="40" fill="green">
+                          </svg>
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6>1155141578@link.cuhk.edu.hk</h6>
+                          <p>Test, test, test</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <h6>Add your comment:</h6>
+                    <form>
+                        <div class="mb-3">
+                            <label for="new-email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+" id="new-email" placeholder="name@example.com" required>
+                        </div>
+                        <div>
+                            <label for="new-comment" class="form-label">Comment</label>
+                            <textarea class="form-control" id="new-comment" placeholder="Please enter your comments here" rows="4" required></textarea>
+                        </div>
+                        <div><span id="comment_warns" style="display:none;color:red;">The comment can not be empty!</span></div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="new-color" id="new-color-red" value="red" checked>
+                            <label class="form-check-label" for="new-color-red">Red</label>
+                        </div>
+                        <div class="form-check">
+                             <input class="form-check-input" type="radio" name="new-color" id="new-color-green" value="green">
+                            <label class="form-check-label" for="new-color-green">Green</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="new-color" id="new-color-yellow" value="yellow">
+                           <label class="form-check-label" for="new-color-yellow">Yellow</label>
+                       </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="new-color" id="new-color-blue" value="blue">
+                            <label class="form-check-label" for="new-color-blue">Blue</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="new-color" id="new-color-cyan" value="cyan">
+                           <label class="form-check-label" for="new-color-cyan">Cyan</label>
+                       </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="new-color" id="new-color-gold" value="gold">
+                            <label class="form-check-label" for="new-color-gold">Gold</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="new-color" id="new-color-lightpink" value="lightpink">
+                            <label class="form-check-label" for="new-color-lightpink">Lightpink</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="return addcomment()">Add comment</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <br>
+    <br>
+    <footer>
+        <div class="container-lg">
+            <p>GU, Zhehao <br>(+852) 5426 1175<br>1155141578@link.cuhk.edu.hk</a>
+            <br><a href="#header">BACK TO TOP</a></p>
+        </div>
+    </footer>
+
+    <script src="CSCI2720HW1.js"></script>
+
+</body>
+
+
+</html>
